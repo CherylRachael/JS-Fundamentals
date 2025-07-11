@@ -6,4 +6,9 @@ function factorial(n) {
 }
 
 const input = parseInt(process.argv[2]);
-console.log(factorial(input));
+
+if (isNaN(input)) {
+  console.log(1);
+} else {
+  console.log(factorial(input));
+}
